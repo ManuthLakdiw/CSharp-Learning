@@ -39,5 +39,21 @@ namespace DataTypes
             WriteLine($"ulong: {hashKey}");
 
         }
+
+        public static void ValueFloatingPointTypeDemo()
+        {
+            //9. float (32-bit Single-precision)
+            float characterSpeed = 12.5f;
+            WriteLine($"float: {characterSpeed}");
+
+            //10. double (64-bit Double-precision)
+            double mathCalculation = 100.55d;
+            WriteLine($"double: {mathCalculation}");
+
+            //11. decimal (128-bit High-precision)
+            decimal bankAccountBalance = 150000.50M;
+            WriteLine($"decimal: {bankAccountBalance}");
+
+        }
     }
 }

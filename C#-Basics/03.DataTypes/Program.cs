@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        ValueDataType.ValueIntegerTypeDemo();
+        // ValueDataType.ValueIntegerTypeDemo();
+
+        ValueDataType.ValueFloatingPointTypeDemo();
+
     }
 }
