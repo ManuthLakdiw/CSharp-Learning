@@ -55,5 +55,17 @@ namespace DataTypes
             WriteLine($"decimal: {bankAccountBalance}");
 
         }
+
+        public static void ValueOtherTypeDemo()
+        {
+            //12. char (16-bit Character)
+            char studentGrade = 'A';
+            WriteLine($"char: {studentGrade}");
+
+            //13. bool (Boolean)
+            bool isRaining = false;
+            WriteLine($"bool: {isRaining}");
+        }
+
     }
 }

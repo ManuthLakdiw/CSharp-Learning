@@ -6,7 +6,9 @@ class Program
     {
         // ValueDataType.ValueIntegerTypeDemo();
 
-        ValueDataType.ValueFloatingPointTypeDemo();
+        // ValueDataType.ValueFloatingPointTypeDemo();
+
+        ValueDataType.ValueOtherTypeDemo();
 
     }
 }
