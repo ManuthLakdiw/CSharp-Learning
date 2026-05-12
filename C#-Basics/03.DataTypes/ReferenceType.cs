@@ -26,5 +26,13 @@ namespace DataTypes
 
         }
 
+        public static void UserDefinedReferenceDataTypeDemo()
+        {
+            // A. class (The Blueprint) -> You can demonstrate it in OOP section
+
+            // B. interface (The Contract) -> You can demonstrate it in OOP section
+
+        }
+
     }
 }
