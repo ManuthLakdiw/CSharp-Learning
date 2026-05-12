@@ -33,7 +33,35 @@ class PointerDataType
             Console.WriteLine(*nextAddress); // Output: 30
         }
     }
+
+    public static void PointerDatTypeWithFixed()
+    {
+        unsafe
+        {
+            // 1. We create a normal Reference Type (An Array in the Heap)
+            int[] myScores = { 10, 20, 30 };
+
+            // ERROR! You cannot do this: int* badPointer = myScores; 
+            // C# will block you because the array might move!
+
+            // 2. We drop the anchor using 'fixed'
+            fixed (int* safePointer = myScores)
+            {
+                // INSIDE THESE BRACKETS, THE ARRAY IS LOCKED TO THE FLOOR.
+                // It is 100% safe to use the pointer here.
+
+                // We change the first score from 10 to 99 using the pointer
+                *safePointer = 99;
+
+                // We print it to prove it changed
+                Console.WriteLine(*safePointer); // Output: 99
+            }
+
+            // THE ANCHOR IS NOW LIFTED. The array is allowed to be moved again.
+        }
+    }
 }
+
 
 
 

@@ -12,9 +12,11 @@ class Program
 
         // ReferenceDataType.PredefinedReferenceDataTypeDemo();
 
-        PointerDataType.PointerDataTypeDemo();
+        // PointerDataType.PointerDataTypeDemo();
 
-        PointerDataType.PointerDataTypeDemoMath();
+        // PointerDataType.PointerDataTypeDemoMath();
+
+        PointerDataType.PointerDatTypeWithFixed();
 
     }
 }
