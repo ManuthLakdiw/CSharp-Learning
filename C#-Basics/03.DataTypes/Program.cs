@@ -10,7 +10,11 @@ class Program
 
         // ValueDataType.ValueOtherTypeDemo();
 
-        ReferenceDataType.PredefinedReferenceDataTypeDemo();
+        // ReferenceDataType.PredefinedReferenceDataTypeDemo();
+
+        PointerDataType.PointerDataTypeDemo();
+
+        PointerDataType.PointerDataTypeDemoMath();
 
     }
 }
