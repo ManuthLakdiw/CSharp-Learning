@@ -1,4 +1,5 @@
 ﻿using ConditionalStatement.IfElseElseIf;
+using ConditionalStatement.Switch;
 
 namespace ConditionalStatement
 {
@@ -6,7 +7,8 @@ namespace ConditionalStatement
     {
         static void Main(string[] args)
         {
-            IfElseElseIfStatement.IfElseElseIfDemo();
+            // IfElseElseIfStatement.IfElseElseIfDemo();
+            SwitchStatement.SwitchDemo();
         }
     }
 }
