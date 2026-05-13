@@ -6,6 +6,7 @@ using Operators.Conparison;
 using Operators.Logical;
 using Operators.NullRelated;
 using Operators.Ternary;
+using Operators.TypeAndCast;
 
 namespace Operators
 {
@@ -25,7 +26,9 @@ namespace Operators
 
             // TernaryOpr.TernaryDemo();
 
-            NullRelatedOpr.NullRelatedDemo();
+            // NullRelatedOpr.NullRelatedDemo();
+
+            TypeAndCastOpr.TypeAndCastDemo();
         }
     }
 }
