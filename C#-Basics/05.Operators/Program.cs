@@ -2,6 +2,7 @@
 using Operators.Arithmatic;
 using Operators.Assignment;
 using Operators.Conparison;
+using Operators.Logical;
 
 namespace Operators
 {
@@ -13,7 +14,9 @@ namespace Operators
 
             // AssigmentOpr.AssignmentDemo();
 
-            ComparisonOpr.ComparisonDemo();
+            // ComparisonOpr.ComparisonDemo();
+
+            LogicalOpr.LogicalDemo();
         }
     }
 }
