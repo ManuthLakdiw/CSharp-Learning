@@ -27,12 +27,21 @@ namespace TypeCasting
             // Console.WriteLine(myInt);    // Outputs 9
 
 
-            // Convert Class
-            string ageText = "25";
-            // We translate the text into a real math number!
-            int realAge = Convert.ToInt32(ageText);
-            WriteLine(realAge);
-            WriteLine(realAge.GetType());
+            // // Convert Class
+            // string ageText = "25";
+            // // We translate the text into a real math number!
+            // int realAge = Convert.ToInt32(ageText);
+            // WriteLine(realAge);
+            // WriteLine(realAge.GetType());
+
+
+            // Cannot everything to casting    
+            string giantNumber = "12359047682914678924628";
+
+            // CRASH! The number is too big for the 32-bit box! It overflows!
+            int explodedBox = Convert.ToInt32(giantNumber);
+            WriteLine(explodedBox);
+            WriteLine(explodedBox.GetType());
         }
     }
 }
