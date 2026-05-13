@@ -1,6 +1,7 @@
 ﻿
 using Operators.Arithmatic;
 using Operators.Assignment;
+using Operators.Bitwise;
 using Operators.Conparison;
 using Operators.Logical;
 
@@ -16,7 +17,9 @@ namespace Operators
 
             // ComparisonOpr.ComparisonDemo();
 
-            LogicalOpr.LogicalDemo();
+            // LogicalOpr.LogicalDemo();
+
+            BitwiseOpr.BitwiseDemo();
         }
     }
 }
