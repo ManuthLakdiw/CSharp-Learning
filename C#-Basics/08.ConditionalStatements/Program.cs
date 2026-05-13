@@ -9,6 +9,9 @@ namespace ConditionalStatement
         {
             // IfElseElseIfStatement.IfElseElseIfDemo();
             SwitchStatement.SwitchDemo();
+
+
+            SwitchExpression.SwitchDemo();
         }
     }
 }

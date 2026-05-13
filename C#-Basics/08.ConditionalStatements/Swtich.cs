@@ -34,6 +34,33 @@ namespace ConditionalStatement.Switch
         }
     }
 
+    class SwitchExpression
+    {
+        public static void SwitchDemo()
+        {
+            Console.WriteLine("Welcome to the Coffee Shop!");
+            string coffeeSize = "Medium";
+
+            // ==========================================
+            // METHOD 2: The Modern Switch Expression 
+            // (Used to calculate the exact price into a variable)
+            // ==========================================
+            Console.WriteLine("\n--- Processing with Switch Expression ---");
+
+            // We use the switch to instantly grab the correct price number
+            double price = coffeeSize switch
+            {
+                "Small" => 2.00,
+                "Medium" => 3.50,
+                "Large" => 5.00,
+                _ => 0.00 // The underscore '_' is the default backup!
+            };
+
+            Console.WriteLine("Your final total is: $" + price);
+
+            Console.ReadLine();
+        }
+    }
 
 
 }
