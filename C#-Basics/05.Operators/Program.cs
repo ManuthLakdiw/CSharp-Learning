@@ -1,5 +1,6 @@
 ﻿
 using Operators.Arithmatic;
+using Operators.Assignment;
 
 namespace Operators
 {
@@ -7,7 +8,9 @@ namespace Operators
     {
         static void Main(string[] args)
         {
-            ArithmaticOpr.ArithmaticDemo();
+            // ArithmaticOpr.ArithmaticDemo();
+
+            AssigmentOpr.AssignmentDemo();
         }
     }
 }
