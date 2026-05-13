@@ -1,4 +1,5 @@
-﻿using Loops.WhileLoop;
+﻿using Loops.DoWhileLoop;
+using Loops.WhileLoop;
 
 namespace Loops
 {
@@ -6,7 +7,9 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            WhileLp.WhileLoopDemo();
+            // WhileLp.WhileLoopDemo();
+
+            DoWhileLp.DoWhileLoopDemo();
         }
     }
 }
