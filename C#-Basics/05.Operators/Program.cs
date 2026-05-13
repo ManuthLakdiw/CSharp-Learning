@@ -4,6 +4,7 @@ using Operators.Assignment;
 using Operators.Bitwise;
 using Operators.Conparison;
 using Operators.Logical;
+using Operators.NullRelated;
 using Operators.Ternary;
 
 namespace Operators
@@ -22,7 +23,9 @@ namespace Operators
 
             // BitwiseOpr.BitwiseDemo();
 
-            TernaryOpr.TernaryDemo();
+            // TernaryOpr.TernaryDemo();
+
+            NullRelatedOpr.NullRelatedDemo();
         }
     }
 }
