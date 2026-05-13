@@ -62,5 +62,58 @@ namespace ConditionalStatement.Switch
         }
     }
 
+    class SwitchAdvanced()
+    {
+        public static void SwitchDemo()
+        {
+            int score = 85;
+            bool hasCheated = false;
 
+            Console.WriteLine("--- Advanced Switch Statement ---");
+
+            switch (score)
+            {
+                // 1. Using the 'when' keyword for a boolean check!
+                // It only runs this case if the score is 100 AND they didn't cheat.
+                case 100 when hasCheated == false:
+                    Console.WriteLine("Perfect Score! You win a gold medal.");
+                    break;
+
+                // 2. Using Relational Pattern Matching ( > and < )
+                case >= 80:
+                    Console.WriteLine("Grade: A");
+                    // 3. Multi-line code inside a case
+                    Console.WriteLine("Great job, you are doing very well.");
+                    int extraPoints = 5;
+                    Console.WriteLine("We added " + extraPoints + " bonus points!");
+                    break;
+
+                // 4. Stacking cases (checking multiple values at once)
+                case 0:
+                case 1:
+                case 2:
+                    Console.WriteLine("You got a 0, 1, or 2. You completely failed.");
+                    break;
+
+                // 5. The Default Case
+                default:
+                    Console.WriteLine("Standard passing grade.");
+                    break;
+            }
+
+            Console.WriteLine("\n--- Advanced Switch Expression ---");
+
+            // Using "or", greater-than symbols, and the mandatory "_" default!
+            string gradeCategory = score switch
+            {
+                100 => "Perfect",
+                >= 80 => "High Distinction",
+                50 or 51 or 52 => "Barely Passed", // Multiple values
+                < 50 => "Failed",
+                _ => "Average" // Mandatory default backup
+            };
+
+            Console.WriteLine("Your Category is: " + gradeCategory);
+        }
+    }
 }

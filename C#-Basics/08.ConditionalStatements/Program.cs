@@ -12,6 +12,9 @@ namespace ConditionalStatement
 
 
             SwitchExpression.SwitchDemo();
+
+
+            SwitchAdvanced.SwitchDemo();
         }
     }
 }
