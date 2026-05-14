@@ -16,7 +16,9 @@ namespace Arrays
 
             // ArrayLengths.RunLengthExamples();
 
-            ArrayLengths.RunOneToFiveDimensions();
+            // ArrayLengths.RunOneToFiveDimensions();
+
+            AdvancedJaggedArrays.RunAdvancedJagged();
         }
     }
 }
