@@ -12,7 +12,11 @@ namespace Arrays
 
             // ArrayMethods.RunBuiltInMethods();
 
-            ArrayAdvanced.RunAdvancedArrays();
+            // ArrayAdvanced.RunAdvancedArrays();
+
+            // ArrayLengths.RunLengthExamples();
+
+            ArrayLengths.RunOneToFiveDimensions();
         }
     }
 }
