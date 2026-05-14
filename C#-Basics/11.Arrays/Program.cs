@@ -6,7 +6,9 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            ArrayBasics.RunBasics();
+            // ArrayBasics.RunBasics();
+
+            ArrayLoops.RunLoops();
         }
     }
 }
