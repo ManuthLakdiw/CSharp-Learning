@@ -10,7 +10,9 @@ namespace Arrays
 
             // ArrayLoops.RunLoops();
 
-            ArrayMethods.RunBuiltInMethods();
+            // ArrayMethods.RunBuiltInMethods();
+
+            ArrayAdvanced.RunAdvancedArrays();
         }
     }
 }
