@@ -2,6 +2,7 @@
 using ParameterModifiers.OutModifier;
 using ParameterModifiers.ParamsModifier;
 using ParameterModifiers.RefModifier;
+using ParameterModifiers.ThisModifier;
 
 namespace ParameterModifiers
 {
@@ -15,7 +16,12 @@ namespace ParameterModifiers
 
             // OutMdf.OutModifierDemo();
 
-            ParamsMdf.ParamsModifierDemo();
+            // ParamsMdf.ParamsModifierDemo();
+
+            "manuth".MakeCool("########");
+
+            Player player1 = new Player("Manuth Lakdiw");
+            Console.WriteLine(player1.Health);
         }
     }
 }
