@@ -1,4 +1,5 @@
 ﻿using ParameterModifiers.InModifier;
+using ParameterModifiers.RefModifier;
 
 namespace ParameterModifiers
 {
@@ -6,7 +7,9 @@ namespace ParameterModifiers
     {
         static void Main(string[] args)
         {
-            InMdf.InModifierDemo();
+            // InMdf.InModifierDemo();
+
+            RefMdf.RefModifierDemo();
         }
     }
 }
