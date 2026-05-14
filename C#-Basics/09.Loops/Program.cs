@@ -1,4 +1,5 @@
 ﻿using Loops.DoWhileLoop;
+using Loops.ForEachLoop;
 using Loops.WhileLoop;
 
 namespace Loops
@@ -11,7 +12,9 @@ namespace Loops
 
             // DoWhileLp.DoWhileLoopDemo();
 
-            ForLoop.ForLp.ForLoopDemo();
+            // ForLoop.ForLp.ForLoopDemo();
+
+            ForEachLp.ForEachLoopDemo();
         }
     }
 }
