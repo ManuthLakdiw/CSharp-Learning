@@ -1,4 +1,5 @@
 ﻿using ParameterModifiers.InModifier;
+using ParameterModifiers.OutModifier;
 using ParameterModifiers.RefModifier;
 
 namespace ParameterModifiers
@@ -9,7 +10,9 @@ namespace ParameterModifiers
         {
             // InMdf.InModifierDemo();
 
-            RefMdf.RefModifierDemo();
+            // RefMdf.RefModifierDemo();
+
+            OutMdf.OutModifierDemo();
         }
     }
 }
