@@ -9,7 +9,9 @@ namespace Loops
         {
             // WhileLp.WhileLoopDemo();
 
-            DoWhileLp.DoWhileLoopDemo();
+            // DoWhileLp.DoWhileLoopDemo();
+
+            ForLoop.ForLp.ForLoopDemo();
         }
     }
 }
