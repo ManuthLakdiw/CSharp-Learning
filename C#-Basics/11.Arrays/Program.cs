@@ -8,7 +8,9 @@ namespace Arrays
         {
             // ArrayBasics.RunBasics();
 
-            ArrayLoops.RunLoops();
+            // ArrayLoops.RunLoops();
+
+            ArrayMethods.RunBuiltInMethods();
         }
     }
 }
