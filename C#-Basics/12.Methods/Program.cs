@@ -6,7 +6,10 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            MethodBasics.RunBasics();
+            // MethodBasics.RunBasics();
+
+            OptionalParameters.RunParameters();
+
         }
     }
 }
