@@ -10,7 +10,9 @@ namespace Methods
 
             // OptionalParameters.RunParameters();
 
-            NamedAndTuples.RunAdvancedMethods();
+            // NamedAndTuples.RunAdvancedMethods();
+
+            TupleDeepDive.RunTupleExamples();
 
         }
     }
