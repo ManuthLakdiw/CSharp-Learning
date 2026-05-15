@@ -18,6 +18,8 @@ namespace Methods
 
             // AdvancedMethods.RunAdvancedFeatures();
 
+            ExpressionBodiedDeepDive.RunExpressionExamples();
+
         }
     }
 }
