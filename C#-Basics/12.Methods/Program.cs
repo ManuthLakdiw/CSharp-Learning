@@ -8,7 +8,9 @@ namespace Methods
         {
             // MethodBasics.RunBasics();
 
-            OptionalParameters.RunParameters();
+            // OptionalParameters.RunParameters();
+
+            NamedAndTuples.RunAdvancedMethods();
 
         }
     }
