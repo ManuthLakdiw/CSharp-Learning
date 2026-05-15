@@ -1,3 +1,16 @@
 **/bin/
 **/obj/
 **/.DS_Store
+C#-Basics/01.HelloWorld/01.HelloWorld.csproj.lscache
+C#-Basics/02.Variables/02.Variables.csproj.lscache
+C#-Basics/03.DataTypes/03.DataTypes.csproj.lscache
+C#-Basics/04.TypeCasting/04.TypeCasting.csproj.lscache
+C#-Basics/05.Operators/05.Operators.csproj.lscache
+C#-Basics/06.MathClass/06.MathClass.csproj.lscache
+C#-Basics/07.stringVsString/07.stringVsString.csproj.lscache
+C#-Basics/08.ConditionalStatements/08.ConditionalStatements.csproj.lscache
+C#-Basics/09.Loops/09.Loops.csproj.lscache
+C#-Basics/10.ParameterModifiers/10.ParameterModifiers.csproj.lscache
+C#-Basics/11.Arrays/11.Arrays.csproj.lscache
+C#-Basics/12.Methods/12.Methods.csproj.lscache
+C#-Basics/13.Deconstruction/13.Deconstruction.csproj.lscache
