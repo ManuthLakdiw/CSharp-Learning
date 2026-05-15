@@ -6,7 +6,9 @@ namespace Deconstruction
     {
         static void Main(string[] args)
         {
-            DeconstructionTuplesAndMethods.RunDeconstruction();
+            // DeconstructionTuplesAndMethods.RunDeconstruction();
+
+            ClassDeconstructionDemo.RunObjectDeconstruction();
         }
     }
 }
