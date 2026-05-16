@@ -16,3 +16,5 @@ C#-Basics/12.Methods/12.Methods.csproj.lscache
 C#-Basics/13.Deconstruction/13.Deconstruction.csproj.lscache
 Object Oriented Programming (OOP)/01.Basic/01.Basic.csproj.lscache
 Object Oriented Programming (OOP)/02.ClassMembers/02.ClassMembers.csproj.lscache
+*.lscache
+**/*.lscache
