@@ -8,6 +8,8 @@ class Program
     {
         // ConstructorDemo.RunDemo();
 
-        PrimaryConstructorDemo.RunDemo();
+        // PrimaryConstructorDemo.RunDemo();
+
+        ConstructorChainingDemo.RunDemo();
     }
 }
