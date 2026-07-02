@@ -153,16 +153,26 @@ class Program
         // Console.WriteLine("Add doubles: " + calc.Add(2.5, 2.5));
 
 
-        // ---------------------------------------------------------
-        // 4. OPERATOR OVERLOADING
-        // ---------------------------------------------------------
-        Console.WriteLine("\n--- 4. Operator Overloading ---");
-        Box smallBox = new Box(10);
-        Box mediumBox = new Box(20);
+        // // ---------------------------------------------------------
+        // // 4. OPERATOR OVERLOADING
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 4. Operator Overloading ---");
+        // Box smallBox = new Box(10);
+        // Box mediumBox = new Box(20);
         
-        // We can literally use the '+' sign on our custom objects!
-        Box massiveBox = smallBox + mediumBox; 
-        Console.WriteLine("The combined box weight is: " + massiveBox.Weight);
+        // // We can literally use the '+' sign on our custom objects!
+        // Box massiveBox = smallBox + mediumBox; 
+        // Console.WriteLine("The combined box weight is: " + massiveBox.Weight);
 
-    }
+        // ---------------------------------------------------------
+        // 5. METHOD HIDING
+        // ---------------------------------------------------------
+        Console.WriteLine("\n--- 5. Method Hiding ---");
+        SmartPhone myPhone = new SmartPhone();
+        myPhone.Ring(); // Uses the new MP3 ringtone!
+
+        Console.WriteLine("\nAll polymorphism concepts tested successfully!");
+
+
+    }   
 }
