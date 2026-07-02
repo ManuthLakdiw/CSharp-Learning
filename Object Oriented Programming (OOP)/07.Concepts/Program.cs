@@ -132,15 +132,25 @@ class Program
         // myCat.Speak(); // Prints: Meow! Meow!
 
 
-        // ---------------------------------------------------------
-        // 2. PROPERTY OVERRIDING
-        // ---------------------------------------------------------
-        Console.WriteLine("\n--- 2. Property Overriding ---");
-        NormalBank bank1 = new NormalBank();
-        NormalBank bank2 = new PremiumBank(); // Upcasting again!
+        // // ---------------------------------------------------------
+        // // 2. PROPERTY OVERRIDING
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 2. Property Overriding ---");
+        // NormalBank bank1 = new NormalBank();
+        // NormalBank bank2 = new PremiumBank(); // Upcasting again!
         
-        Console.WriteLine("Normal Bank Rate: " + bank1.InterestRate + "%");
-        Console.WriteLine("Premium Bank Rate: " + bank2.InterestRate + "%");
+        // Console.WriteLine("Normal Bank Rate: " + bank1.InterestRate + "%");
+        // Console.WriteLine("Premium Bank Rate: " + bank2.InterestRate + "%");
+
+
+        // ---------------------------------------------------------
+        // 3. METHOD OVERLOADING (Compile-Time)
+        // ---------------------------------------------------------
+        Console.WriteLine("\n--- 3. Method Overloading ---");
+        Calculator calc = new Calculator();
+        Console.WriteLine("Add 2 ints: " + calc.Add(5, 5));
+        Console.WriteLine("Add 3 ints: " + calc.Add(1, 2, 3));
+        Console.WriteLine("Add doubles: " + calc.Add(2.5, 2.5));
 
     }
 }
