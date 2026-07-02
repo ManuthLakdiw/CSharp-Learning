@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.ThisKeyword", "Object Or
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Indexers", "Object Oriented Programming (OOP)\05.Indexers\05.Indexers.csproj", "{6EE9FEDA-64DA-4057-9E52-F7C089D32153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Access-Modifiers", "Object Oriented Programming (OOP)\06.Access-Modifiers\06.Access-Modifiers.csproj", "{87F67B9D-801A-4CB9-863A-D296F1D566CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -269,6 +271,18 @@ Global
 		{6EE9FEDA-64DA-4057-9E52-F7C089D32153}.Release|x64.Build.0 = Release|Any CPU
 		{6EE9FEDA-64DA-4057-9E52-F7C089D32153}.Release|x86.ActiveCfg = Release|Any CPU
 		{6EE9FEDA-64DA-4057-9E52-F7C089D32153}.Release|x86.Build.0 = Release|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Release|x64.Build.0 = Release|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -292,6 +306,7 @@ Global
 		{0ECB2280-08B1-4F9C-BBD9-9277B4C39480} = {BD729AB1-C8E8-695A-CE91-023728CA3DB9}
 		{783662A4-F399-457B-9BE3-FBFFD3D60F59} = {BD729AB1-C8E8-695A-CE91-023728CA3DB9}
 		{6EE9FEDA-64DA-4057-9E52-F7C089D32153} = {BD729AB1-C8E8-695A-CE91-023728CA3DB9}
+		{87F67B9D-801A-4CB9-863A-D296F1D566CA} = {BD729AB1-C8E8-695A-CE91-023728CA3DB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5A98897-4AFF-4F97-835D-4015EB89958B}
