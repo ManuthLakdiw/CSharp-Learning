@@ -1,6 +1,7 @@
 ﻿using System;
 // using Concepts.EncapsulationDemo;
-using Concepts.InheritanceDemo;
+// using Concepts.InheritanceDemo;
+using Concepts.PolymorphismDemo;
 
 namespace Concepts;
 
@@ -55,62 +56,80 @@ class Program
 
 
 
-        Console.WriteLine("=== C# INHERITANCE DEMO ===\n");
+        // Console.WriteLine("=== C# INHERITANCE DEMO ===\n");
 
-        // ---------------------------------------------------------
-        // 1. Testing Single Inheritance
-        // ---------------------------------------------------------
-        Console.WriteLine("--- 1. Single Inheritance ---");
-        Son mySon = new Son();
-        Console.WriteLine("My family name is: " + mySon.FamilyName); // Inherited!
-        mySon.Work(); // Inherited!
-        mySon.Play(); // His own method
-
-
-        // ---------------------------------------------------------
-        // 2. Testing Multi-Level Inheritance
-        // ---------------------------------------------------------
-        Console.WriteLine("\n--- 2. Multi-Level Inheritance ---");
-        Puppy cutePuppy = new Puppy();
-        cutePuppy.Eat();  // From Grandparent (Animal)
-        cutePuppy.Bark(); // From Parent (Dog)
-        cutePuppy.Weep(); // From Child (Puppy)
+        // // ---------------------------------------------------------
+        // // 1. Testing Single Inheritance
+        // // ---------------------------------------------------------
+        // Console.WriteLine("--- 1. Single Inheritance ---");
+        // Son mySon = new Son();
+        // Console.WriteLine("My family name is: " + mySon.FamilyName); // Inherited!
+        // mySon.Work(); // Inherited!
+        // mySon.Play(); // His own method
 
 
-        // ---------------------------------------------------------
-        // 3. Testing Hierarchical Inheritance
-        // ---------------------------------------------------------
-        Console.WriteLine("\n--- 3. Hierarchical Inheritance ---");
-        Car myCar = new Car();
-        Truck myTruck = new Truck();
+        // // ---------------------------------------------------------
+        // // 2. Testing Multi-Level Inheritance
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 2. Multi-Level Inheritance ---");
+        // Puppy cutePuppy = new Puppy();
+        // cutePuppy.Eat();  // From Grandparent (Animal)
+        // cutePuppy.Bark(); // From Parent (Dog)
+        // cutePuppy.Weep(); // From Child (Puppy)
+
+
+        // // ---------------------------------------------------------
+        // // 3. Testing Hierarchical Inheritance
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 3. Hierarchical Inheritance ---");
+        // Car myCar = new Car();
+        // Truck myTruck = new Truck();
         
-        myCar.StartEngine(); // Car inherited this
-        myCar.PlayRadio();   // Car's own feature
+        // myCar.StartEngine(); // Car inherited this
+        // myCar.PlayRadio();   // Car's own feature
         
-        myTruck.StartEngine();    // Truck ALSO inherited this!
-        myTruck.CarryHeavyLoad(); // Truck's own feature
+        // myTruck.StartEngine();    // Truck ALSO inherited this!
+        // myTruck.CarryHeavyLoad(); // Truck's own feature
 
+
+        // // ---------------------------------------------------------
+        // // 4. Testing Multiple Inheritance (Interfaces)
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 4. Multiple Inheritance (Interfaces) ---");
+        // Duck donald = new Duck();
+        // donald.Fly();  // From IFlyable contract
+        // donald.Swim(); // From ISwimmable contract
+
+
+        // // ---------------------------------------------------------
+        // // 5. Testing Overriding (Virtual / Override)
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 5. Overriding Parent's Code ---");
+        // Monster genericMonster = new Monster();
+        // genericMonster.Attack(); // Prints normal attack
+
+        // Dragon bossDragon = new Dragon();
+        // bossDragon.Attack(); // Prints the FIRE attack (The overridden version!)
+
+
+        // Console.WriteLine("\nAll inheritance concepts tested successfully!");
+
+        
+        
+       Console.WriteLine("=== POLYMORPHISM DEMO ===\n");
 
         // ---------------------------------------------------------
-        // 4. Testing Multiple Inheritance (Interfaces)
+        // 1. RUN-TIME POLYMORPHISM (Upcasting & Overriding)
         // ---------------------------------------------------------
-        Console.WriteLine("\n--- 4. Multiple Inheritance (Interfaces) ---");
-        Duck donald = new Duck();
-        donald.Fly();  // From IFlyable contract
-        donald.Swim(); // From ISwimmable contract
+        Console.WriteLine("--- 1. Run-Time (Dynamic) Polymorphism ---");
+        
+        // SUPER-CLASS REFERENCE = SUB-CLASS OBJECT!
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
 
+        // The computer decides which sound to make at Run-Time!
+        myDog.Speak(); // Prints: Woof! Woof!
+        myCat.Speak(); // Prints: Meow! Meow!
 
-        // ---------------------------------------------------------
-        // 5. Testing Overriding (Virtual / Override)
-        // ---------------------------------------------------------
-        Console.WriteLine("\n--- 5. Overriding Parent's Code ---");
-        Monster genericMonster = new Monster();
-        genericMonster.Attack(); // Prints normal attack
-
-        Dragon bossDragon = new Dragon();
-        bossDragon.Attack(); // Prints the FIRE attack (The overridden version!)
-
-
-        Console.WriteLine("\nAll inheritance concepts tested successfully!");
     }
 }
