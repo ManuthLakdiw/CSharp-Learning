@@ -118,18 +118,29 @@ class Program
         
        Console.WriteLine("=== POLYMORPHISM DEMO ===\n");
 
-        // ---------------------------------------------------------
-        // 1. RUN-TIME POLYMORPHISM (Upcasting & Overriding)
-        // ---------------------------------------------------------
-        Console.WriteLine("--- 1. Run-Time (Dynamic) Polymorphism ---");
+        // // ---------------------------------------------------------
+        // // 1. RUN-TIME POLYMORPHISM (Upcasting & Overriding)
+        // // ---------------------------------------------------------
+        // Console.WriteLine("--- 1. Run-Time (Dynamic) Polymorphism ---");
         
-        // SUPER-CLASS REFERENCE = SUB-CLASS OBJECT!
-        Animal myDog = new Dog();
-        Animal myCat = new Cat();
+        // // SUPER-CLASS REFERENCE = SUB-CLASS OBJECT!
+        // Animal myDog = new Dog();
+        // Animal myCat = new Cat();
 
-        // The computer decides which sound to make at Run-Time!
-        myDog.Speak(); // Prints: Woof! Woof!
-        myCat.Speak(); // Prints: Meow! Meow!
+        // // The computer decides which sound to make at Run-Time!
+        // myDog.Speak(); // Prints: Woof! Woof!
+        // myCat.Speak(); // Prints: Meow! Meow!
+
+
+        // ---------------------------------------------------------
+        // 2. PROPERTY OVERRIDING
+        // ---------------------------------------------------------
+        Console.WriteLine("\n--- 2. Property Overriding ---");
+        NormalBank bank1 = new NormalBank();
+        NormalBank bank2 = new PremiumBank(); // Upcasting again!
+        
+        Console.WriteLine("Normal Bank Rate: " + bank1.InterestRate + "%");
+        Console.WriteLine("Premium Bank Rate: " + bank2.InterestRate + "%");
 
     }
 }
