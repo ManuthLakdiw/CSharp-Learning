@@ -143,14 +143,26 @@ class Program
         // Console.WriteLine("Premium Bank Rate: " + bank2.InterestRate + "%");
 
 
+        // // ---------------------------------------------------------
+        // // 3. METHOD OVERLOADING (Compile-Time)
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 3. Method Overloading ---");
+        // Calculator calc = new Calculator();
+        // Console.WriteLine("Add 2 ints: " + calc.Add(5, 5));
+        // Console.WriteLine("Add 3 ints: " + calc.Add(1, 2, 3));
+        // Console.WriteLine("Add doubles: " + calc.Add(2.5, 2.5));
+
+
         // ---------------------------------------------------------
-        // 3. METHOD OVERLOADING (Compile-Time)
+        // 4. OPERATOR OVERLOADING
         // ---------------------------------------------------------
-        Console.WriteLine("\n--- 3. Method Overloading ---");
-        Calculator calc = new Calculator();
-        Console.WriteLine("Add 2 ints: " + calc.Add(5, 5));
-        Console.WriteLine("Add 3 ints: " + calc.Add(1, 2, 3));
-        Console.WriteLine("Add doubles: " + calc.Add(2.5, 2.5));
+        Console.WriteLine("\n--- 4. Operator Overloading ---");
+        Box smallBox = new Box(10);
+        Box mediumBox = new Box(20);
+        
+        // We can literally use the '+' sign on our custom objects!
+        Box massiveBox = smallBox + mediumBox; 
+        Console.WriteLine("The combined box weight is: " + massiveBox.Weight);
 
     }
 }
