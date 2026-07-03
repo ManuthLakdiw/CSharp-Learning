@@ -1,7 +1,8 @@
 ﻿using System;
 // using Concepts.EncapsulationDemo;
 // using Concepts.InheritanceDemo;
-using Concepts.PolymorphismDemo;
+// using Concepts.PolymorphismDemo;
+using Concepts.AbstractionDemo;
 
 namespace Concepts;
 
@@ -116,7 +117,7 @@ class Program
 
         
         
-       Console.WriteLine("=== POLYMORPHISM DEMO ===\n");
+    //    Console.WriteLine("=== POLYMORPHISM DEMO ===\n");
 
         // // ---------------------------------------------------------
         // // 1. RUN-TIME POLYMORPHISM (Upcasting & Overriding)
@@ -167,11 +168,50 @@ class Program
         // ---------------------------------------------------------
         // 5. METHOD HIDING
         // ---------------------------------------------------------
-        Console.WriteLine("\n--- 5. Method Hiding ---");
-        SmartPhone myPhone = new SmartPhone();
-        myPhone.Ring(); // Uses the new MP3 ringtone!
+        // Console.WriteLine("\n--- 5. Method Hiding ---");
+        // SmartPhone myPhone = new SmartPhone();
+        // myPhone.Ring(); // Uses the new MP3 ringtone!
 
-        Console.WriteLine("\nAll polymorphism concepts tested successfully!");
+        // Console.WriteLine("\nAll polymorphism concepts tested successfully!");
+
+
+
+        Console.WriteLine("=== ABSTRACTION DEMO ===\n");
+
+        // ERROR: If you remove the // below, the program will crash!
+        // Rule: You CANNOT instantiate (create an object of) an Abstract Class!
+        // SocialMedia myApp = new SocialMedia(); 
+
+
+        // ---------------------------------------------------------
+        // Example 1: Social Media Login
+        // ---------------------------------------------------------
+        Console.WriteLine("--- 1. Social Media Example ---");
+        
+        // We create an object of the finished Child class
+        FacebookAuth myFacebook = new FacebookAuth();
+        myFacebook.Username = "Manuth";
+
+        // This method comes from the Parent
+        myFacebook.CheckInternetConnection();
+        
+        // This method comes from the Child (It hides the complex login logic)
+        myFacebook.Login();
+
+
+        // ---------------------------------------------------------
+        // Example 2: TV Remote
+        // ---------------------------------------------------------
+        Console.WriteLine("\n--- 2. TV Remote Example ---");
+        
+        SamsungTv myTv = new SamsungTv();
+
+        // The user only knows how to press the power button. 
+        // The user does not know about the Infrared Signals. That is Abstraction!
+        myTv.PressPowerButton();
+
+
+        Console.WriteLine("\nAll abstraction concepts tested successfully!");
 
 
     }   
