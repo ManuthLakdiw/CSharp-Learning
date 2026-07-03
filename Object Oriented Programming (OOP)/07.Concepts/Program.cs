@@ -2,7 +2,8 @@
 // using Concepts.EncapsulationDemo;
 // using Concepts.InheritanceDemo;
 // using Concepts.PolymorphismDemo;
-using Concepts.AbstractionDemo;
+// using Concepts.AbstractionDemo;
+using Concepts.InterfaceDemo;
 
 namespace Concepts;
 
@@ -176,46 +177,98 @@ class Program
 
 
 
-        Console.WriteLine("=== ABSTRACTION DEMO ===\n");
+        // Console.WriteLine("=== ABSTRACTION DEMO ===\n");
 
-        // ERROR: If you remove the // below, the program will crash!
-        // Rule: You CANNOT instantiate (create an object of) an Abstract Class!
-        // SocialMedia myApp = new SocialMedia(); 
+        // // ERROR: If you remove the // below, the program will crash!
+        // // Rule: You CANNOT instantiate (create an object of) an Abstract Class!
+        // // SocialMedia myApp = new SocialMedia(); 
 
 
-        // ---------------------------------------------------------
-        // Example 1: Social Media Login
-        // ---------------------------------------------------------
-        Console.WriteLine("--- 1. Social Media Example ---");
+        // // ---------------------------------------------------------
+        // // Example 1: Social Media Login
+        // // ---------------------------------------------------------
+        // Console.WriteLine("--- 1. Social Media Example ---");
         
-        // We create an object of the finished Child class
-        FacebookAuth myFacebook = new FacebookAuth()
-        {
-            Username = "requesred User Name"
-        };
-        myFacebook.Username = "Manuth";
+        // // We create an object of the finished Child class
+        // FacebookAuth myFacebook = new FacebookAuth()
+        // {
+        //     Username = "requesred User Name"
+        // };
+        // myFacebook.Username = "Manuth";
 
-        // This method comes from the Parent
-        myFacebook.CheckInternetConnection();
+        // // This method comes from the Parent
+        // myFacebook.CheckInternetConnection();
         
-        // This method comes from the Child (It hides the complex login logic)
-        myFacebook.Login();
+        // // This method comes from the Child (It hides the complex login logic)
+        // myFacebook.Login();
+
+
+        // // ---------------------------------------------------------
+        // // Example 2: TV Remote
+        // // ---------------------------------------------------------
+        // Console.WriteLine("\n--- 2. TV Remote Example ---");
+        
+        // SamsungTv myTv = new SamsungTv();
+
+        // // The user only knows how to press the power button. 
+        // // The user does not know about the Infrared Signals. That is Abstraction!
+        // myTv.PressPowerButton();
+
+
+        // Console.WriteLine("\nAll abstraction concepts tested successfully!");
+
+
+
+
+        Console.WriteLine("=== C# INTERFACES DEMO ===\n");
+
+        // ---------------------------------------------------------
+        // 1. BASIC INTERFACE
+        // ---------------------------------------------------------
+        Console.WriteLine("--- 1. Basic Interface ---");
+        Car myCar = new();
+        myCar.StartEngine();
 
 
         // ---------------------------------------------------------
-        // Example 2: TV Remote
+        // 2. MULTIPLE INHERITANCE
         // ---------------------------------------------------------
-        Console.WriteLine("\n--- 2. TV Remote Example ---");
+        Console.WriteLine("\n--- 2. Multiple Inheritance ---");
+        Duck donald = new Duck();
+        donald.Fly();
+        donald.Swim();
+
+
+        // ---------------------------------------------------------
+        // 3. DEFAULT METHODS (The Tricky Part!)
+        // ---------------------------------------------------------
+        Console.WriteLine("\n--- 3. Default Methods ---");
+        ConsoleLogger logger = new ConsoleLogger();
+        logger.LogError("System crashed!");
+
+        // logger.LogWarning("Be careful!"); <-- ERROR! C# hides default methods.
         
-        SamsungTv myTv = new SamsungTv();
-
-        // The user only knows how to press the power button. 
-        // The user does not know about the Infrared Signals. That is Abstraction!
-        myTv.PressPowerButton();
+        // HOW TO FIX IT: We must UPCAST the object into the Interface box!
+        ILogger interfaceBox = logger; 
+        interfaceBox.LogWarning("Disk space is low!"); // SUCCESS!
 
 
-        Console.WriteLine("\nAll abstraction concepts tested successfully!");
+        // ---------------------------------------------------------
+        // 4. EXPLICIT IMPLEMENTATION (Fixing name conflicts)
+        // ---------------------------------------------------------
+        Console.WriteLine("\n--- 4. Explicit Implementation ---");
+        Storage myStorage = new Storage();
 
+        // myStorage.Save(); <-- ERROR! The computer doesn't know which Save() to use.
+
+        // HOW TO FIX IT: Upcast to the specific interface you want to use!
+        ((IDatabase)myStorage).Save();
+
+        IDatabase dbSystem = myStorage;
+        dbSystem.Save(); // Calls the Database save
+
+        
+        Console.WriteLine("\nAll interface concepts tested successfully!");
 
     }   
 }
