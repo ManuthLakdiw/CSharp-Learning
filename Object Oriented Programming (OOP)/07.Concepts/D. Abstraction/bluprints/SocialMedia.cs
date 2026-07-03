@@ -7,7 +7,7 @@ namespace Concepts.AbstractionDemo;
 public abstract class SocialMedia
 {
     // You can have normal Properties in an abstract class
-    public string Username { get; set; }
+    public required string Username { get; set; }
 
     // 2. CONCRETE METHOD (Finished Method)
     // All social media apps check the internet the exact same way.

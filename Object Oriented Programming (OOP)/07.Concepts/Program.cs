@@ -189,7 +189,10 @@ class Program
         Console.WriteLine("--- 1. Social Media Example ---");
         
         // We create an object of the finished Child class
-        FacebookAuth myFacebook = new FacebookAuth();
+        FacebookAuth myFacebook = new FacebookAuth()
+        {
+            Username = "requesred User Name"
+        };
         myFacebook.Username = "Manuth";
 
         // This method comes from the Parent
