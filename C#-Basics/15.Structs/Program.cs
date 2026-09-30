@@ -35,7 +35,16 @@ namespace StructsDemo
             CopyDemo demo = new();
             demo.TestCopyBehavior();
 
-        
+
+             // ---------------------------------------------------------
+            // 4. STRUCT WITH INTERFACE
+            // ---------------------------------------------------------
+            Console.WriteLine("\n--- 4. Struct with Interface ---");
+            CharacterStats hero = new CharacterStats { Name = "Knight" };
+            hero.Move(50);
+
+
+            Console.WriteLine("\nAll Struct concepts tested successfully!");
             
 
         }
