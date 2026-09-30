@@ -28,6 +28,15 @@ namespace StructsDemo
             // pureRed.Red = 100; // You cannot change a readonly struct!
 
 
+            // ---------------------------------------------------------
+            // 3. COPY BEHAVIOR (Class vs Struct)
+            // ---------------------------------------------------------
+            Console.WriteLine("\n");
+            CopyDemo demo = new();
+            demo.TestCopyBehavior();
+
+        
+            
 
         }
     }
