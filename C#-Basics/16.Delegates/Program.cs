@@ -35,6 +35,13 @@ namespace DelegatesDemo
             ActionDemo actionDemo = new ActionDemo();
             actionDemo.RunDemo();
 
+
+            // ---------------------------------------------------------
+            // 3. FUNC DELEGATE (Returns value)
+            // ---------------------------------------------------------
+            Console.WriteLine("\n--- 3. Func Delegate ---");
+            FuncDemo funcDemo = new FuncDemo();
+            funcDemo.RunDemo();
         }
     }
 }
