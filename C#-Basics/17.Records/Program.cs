@@ -11,6 +11,10 @@ namespace RecordsDemo
             // 1. Test Class vs Record Equality
             EqualityDemo equalityDemo = new EqualityDemo();
             equalityDemo.RunDemo();
+
+            // 2. Test the 'with' Keyword
+            WithKeywordDemo withDemo = new WithKeywordDemo();
+            withDemo.RunDemo();
         }
     }
 }
