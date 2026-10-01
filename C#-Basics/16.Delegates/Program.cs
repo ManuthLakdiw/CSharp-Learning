@@ -3,7 +3,7 @@
 namespace DelegatesDemo
 {
     class Program
-    {   
+    {
 
 
         // A matching method for our Custom Delegate
@@ -15,17 +15,26 @@ namespace DelegatesDemo
 
         public static void Main(string[] args)
         {
-           Console.WriteLine("=== C# DELEGATES DEMO ===\n");
+            Console.WriteLine("=== C# DELEGATES DEMO ===\n");
 
-        // ---------------------------------------------------------
-        // 1. CUSTOM DELEGATE
-        // ---------------------------------------------------------
-        Console.WriteLine("--- 1. Custom Delegate ---");
-        DownloadManager manager = new();
-        
-        // We pass the method WITHOUT parentheses (). 
-        // We are giving the behavior, not running it yet.
-        manager.DownloadFile(ShowEmailNotification);
+            // ---------------------------------------------------------
+            // 1. CUSTOM DELEGATE
+            // ---------------------------------------------------------
+            Console.WriteLine("--- 1. Custom Delegate ---");
+            DownloadManager manager = new();
+
+            // We pass the method WITHOUT parentheses (). 
+            // We are giving the behavior, not running it yet.
+            manager.DownloadFile(ShowEmailNotification);
+
+
+            // ---------------------------------------------------------
+            // 2. ACTION DELEGATE (void)
+            // ---------------------------------------------------------
+            Console.WriteLine("\n--- 2. Action Delegate ---");
+            ActionDemo actionDemo = new ActionDemo();
+            actionDemo.RunDemo();
+
         }
     }
 }
