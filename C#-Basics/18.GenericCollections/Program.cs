@@ -16,5 +16,10 @@ class Program
         // 2. List
         ListDemo listDemo = new ListDemo();
         listDemo.RunDemo();
+
+
+        // 3. Dictionary
+        DictionaryDemo dictDemo = new DictionaryDemo();
+        dictDemo.RunDemo();
     }
 }
