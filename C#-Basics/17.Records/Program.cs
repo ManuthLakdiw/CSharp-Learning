@@ -23,6 +23,13 @@ namespace RecordsDemo
                 HiredDate = new DateTime(2025, 1, 15)
             };
             emp.PrintDetails();
+
+
+            // 4. Test Record Structs (Mutable vs Readonly)
+            RecordStructDemo structDemo = new RecordStructDemo();
+            structDemo.RunDemo();
+
+            Console.WriteLine("\nAll Record concepts tested successfully!");
         }
     }
 }
