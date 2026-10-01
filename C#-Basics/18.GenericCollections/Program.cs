@@ -26,5 +26,12 @@ class Program
         // 4. HashSet
         HashSetDemo hashDemo = new HashSetDemo();
         hashDemo.RunDemo();
+        
+
+        // 5. Queue and Stack
+        QueueStackDemo qsDemo = new QueueStackDemo();
+        qsDemo.RunDemo();
+
+        Console.WriteLine("\nAll Collection concepts tested successfully!");
     }
 }
