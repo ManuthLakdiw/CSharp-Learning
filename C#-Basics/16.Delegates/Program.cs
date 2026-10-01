@@ -42,6 +42,14 @@ namespace DelegatesDemo
             Console.WriteLine("\n--- 3. Func Delegate ---");
             FuncDemo funcDemo = new FuncDemo();
             funcDemo.RunDemo();
+
+
+            // ---------------------------------------------------------
+            // 4. PREDICATE DELEGATE (Returns bool)
+            // ---------------------------------------------------------
+            Console.WriteLine("\n--- 4. Predicate Delegate ---");
+            PredicateDemo predicateDemo = new PredicateDemo();
+            predicateDemo.RunDemo();
         }
     }
 }
