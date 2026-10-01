@@ -11,5 +11,10 @@ class Program
         // 1. Boxing vs Generics
         BoxingUnboxingDemo boxingDemo = new BoxingUnboxingDemo();
         boxingDemo.RunDemo();
+
+
+        // 2. List
+        ListDemo listDemo = new ListDemo();
+        listDemo.RunDemo();
     }
 }
