@@ -21,5 +21,10 @@ class Program
         // 3. Dictionary
         DictionaryDemo dictDemo = new DictionaryDemo();
         dictDemo.RunDemo();
+
+
+        // 4. HashSet
+        HashSetDemo hashDemo = new HashSetDemo();
+        hashDemo.RunDemo();
     }
 }
