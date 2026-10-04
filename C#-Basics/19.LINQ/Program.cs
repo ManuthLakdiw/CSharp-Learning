@@ -10,5 +10,9 @@ class Program
 
         SyntaxDemo demo1 = new SyntaxDemo();
         demo1.Run();
+
+
+        FilterAndSelectDemo demo2 = new FilterAndSelectDemo();
+        demo2.Run();
     }
 }
