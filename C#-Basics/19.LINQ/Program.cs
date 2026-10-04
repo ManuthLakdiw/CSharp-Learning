@@ -20,5 +20,8 @@ class Program
 
         MathAndConditionsDemo demo4 = new MathAndConditionsDemo();
         demo4.Run();
+
+        SingleElementsDemo demo5 = new SingleElementsDemo();
+        demo5.Run();
     }
 }
