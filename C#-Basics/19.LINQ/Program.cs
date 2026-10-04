@@ -14,5 +14,8 @@ class Program
 
         FilterAndSelectDemo demo2 = new FilterAndSelectDemo();
         demo2.Run();
+
+        SortAndPaginateDemo demo3 = new SortAndPaginateDemo();
+        demo3.Run();
     }
 }
