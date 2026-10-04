@@ -23,5 +23,10 @@ class Program
 
         SingleElementsDemo demo5 = new SingleElementsDemo();
         demo5.Run();
+
+        GroupAndChainDemo demo6 = new GroupAndChainDemo();
+        demo6.Run();
+
+        Console.WriteLine("\nAll LINQ concepts tested successfully!");
     }
 }
