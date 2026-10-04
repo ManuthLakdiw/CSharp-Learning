@@ -17,5 +17,8 @@ class Program
 
         SortAndPaginateDemo demo3 = new SortAndPaginateDemo();
         demo3.Run();
+
+        MathAndConditionsDemo demo4 = new MathAndConditionsDemo();
+        demo4.Run();
     }
 }
