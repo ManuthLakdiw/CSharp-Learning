@@ -27,9 +27,16 @@ namespace ConcurrencyDemo
             // var demo4 = new ThreadSafetyAndLocks();
             // await demo4.RunSafeCodeAsync();
 
-            // 5. Async Locks (SemaphoreSlim)
-            var demo5 = new AsyncLocks();
-            await demo5.RunSemaphoreDemoAsync();
+            // // 5. Async Locks (SemaphoreSlim)
+            // var demo5 = new AsyncLocks();
+            // await demo5.RunSemaphoreDemoAsync();
+
+            // 6. Parallel Programming
+            var demo6 = new ParallelProgramming();
+            demo6.RunParallelForEach();
+            demo6.RunPLinq();
+
+            Console.WriteLine("\nAll Concurrency concepts tested successfully!");
         }
 
     }
