@@ -18,10 +18,14 @@ namespace ConcurrencyDemo
             // await demo2.FetchDatabaseDataAsync();
             // await demo2.CalculateHeavyMathAsync();
 
-            // 3. Advanced Tasks
-            var demo3 = new AdvancedTasks();
-            await demo3.RunWhenAllAsync();
-            await demo3.RunCancellationDemoAsync();
+            // // 3. Advanced Tasks
+            // var demo3 = new AdvancedTasks();
+            // await demo3.RunWhenAllAsync();
+            // await demo3.RunCancellationDemoAsync();
+
+            // 4. Thread Safety (lock)
+            var demo4 = new ThreadSafetyAndLocks();
+            await demo4.RunSafeCodeAsync();
 
 
         }
