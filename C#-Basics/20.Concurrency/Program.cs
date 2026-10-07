@@ -13,10 +13,15 @@ namespace ConcurrencyDemo
             // demo1.RunSynchronous();
             // await demo1.RunAsynchronousAsync();
 
-            // 2. CPU Bound vs I/O Bound
-            var demo2 = new IoVsCpuBound();
-            await demo2.FetchDatabaseDataAsync();
-            await demo2.CalculateHeavyMathAsync();
+            // // 2. CPU Bound vs I/O Bound
+            // var demo2 = new IoVsCpuBound();
+            // await demo2.FetchDatabaseDataAsync();
+            // await demo2.CalculateHeavyMathAsync();
+
+            // 3. Advanced Tasks
+            var demo3 = new AdvancedTasks();
+            await demo3.RunWhenAllAsync();
+            await demo3.RunCancellationDemoAsync();
 
 
         }
