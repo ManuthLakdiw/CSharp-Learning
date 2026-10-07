@@ -23,11 +23,13 @@ namespace ConcurrencyDemo
             // await demo3.RunWhenAllAsync();
             // await demo3.RunCancellationDemoAsync();
 
-            // 4. Thread Safety (lock)
-            var demo4 = new ThreadSafetyAndLocks();
-            await demo4.RunSafeCodeAsync();
+            // // 4. Thread Safety (lock)
+            // var demo4 = new ThreadSafetyAndLocks();
+            // await demo4.RunSafeCodeAsync();
 
-
+            // 5. Async Locks (SemaphoreSlim)
+            var demo5 = new AsyncLocks();
+            await demo5.RunSemaphoreDemoAsync();
         }
 
     }
