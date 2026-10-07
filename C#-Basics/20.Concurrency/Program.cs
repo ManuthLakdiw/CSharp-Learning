@@ -8,10 +8,16 @@ namespace ConcurrencyDemo
         {
             Console.WriteLine("=== C# CONCURRENCY ULTIMATE DEMO ===\n");
 
-            // 1. Sync vs Async
-            var demo1 = new SyncVsAsync();
-            demo1.RunSynchronous();
-            await demo1.RunAsynchronousAsync();
+            // // 1. Sync vs Async
+            // var demo1 = new SyncVsAsync();
+            // demo1.RunSynchronous();
+            // await demo1.RunAsynchronousAsync();
+
+            // 2. CPU Bound vs I/O Bound
+            var demo2 = new IoVsCpuBound();
+            await demo2.FetchDatabaseDataAsync();
+            await demo2.CalculateHeavyMathAsync();
+
 
         }
 
