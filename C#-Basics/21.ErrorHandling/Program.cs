@@ -20,9 +20,15 @@ namespace ErrorHandlingDemo
             // var demo3 = new ThrowDemo();
             // demo3.RunDemo();
 
-            // 4. Exception Filters (when)
-            var demo4 = new WhenFilter();
-            demo4.RunDemo();
+            // // 4. Exception Filters (when)
+            // var demo4 = new WhenFilter();
+            // demo4.RunDemo();
+
+            // 5. Custom Exceptions
+            var demo5 = new CustomExceptions();
+            demo5.RunDemo();
+
+            Console.WriteLine("\nAll Error Handling concepts tested successfully!");
         }
     }
 }
