@@ -16,9 +16,13 @@ namespace ErrorHandlingDemo
             // var demo2 = new ExceptionOrder();
             // demo2.RunDemo();
 
-            // 3. The 'throw' Keyword
-            var demo3 = new ThrowDemo();
-            demo3.RunDemo();
+            // // 3. The 'throw' Keyword
+            // var demo3 = new ThrowDemo();
+            // demo3.RunDemo();
+
+            // 4. Exception Filters (when)
+            var demo4 = new WhenFilter();
+            demo4.RunDemo();
         }
     }
 }
