@@ -6,7 +6,11 @@ namespace ErrorHandlingDemo
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("ErrorHandling");
+            Console.WriteLine("=== C# ERROR HANDLING ULTIMATE DEMO ===\n");
+
+            // 1. Basic Try-Catch-Finally
+            var demo1 = new BasicTryCatch();
+            demo1.RunDemo();
         }
     }
 }
